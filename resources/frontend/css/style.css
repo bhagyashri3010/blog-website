@@ -100,7 +100,7 @@ hr.line {
 	margin: 0 auto;
 	width: 100px;
 }
-/*.section-padding{padding:80px 0;}*/
+.section-padding{padding:80px 0;}
 .section-padding-top{padding-top:80px;}
 .section-padding-bottom{padding-bottom:80px;}
 .d-table {
@@ -1880,7 +1880,7 @@ i.slick-arrow:hover {
 /* Shop page */
 .shop-menu {
     /*border-bottom: 1px solid #ddd;*/
-    /*border-top: 1px solid #ddd;*/
+    border-top: 1px solid #ddd;
     padding: 10px 0;
 }
 .shop-menu .tab-menu a {

@@ -1,19 +1,8 @@
-<style>
-	.section-padding {
-		padding-bottom: 2%;
-	}
-	.blog-img img {
-		width: 66%;
-		max-height: 450px;
-	}
-	.floatleft {
-		margin: 2%;
-	}
-</style>
 <div class="container">
 	<div class="left floatleft" style="margin: 2%;">
 		<a class="back-btn" href="<?php echo ( isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] != '' ? $_SERVER['HTTP_REFERER'] : site_url('blog/frontend') )?>"> <  Back </a>
 	</div>
+
 	<!-- blog content section start -->
 	<section class="blog-area blog-two blog-margin section-padding">
 		<div class="container">
@@ -25,7 +14,7 @@
 							<?php $dir = FCPATH . "uploads/blogs/images/" . $blog['id'] . "/";
 							if( $blog['image_hash'] != "" && file_exists( $dir.$blog['image_hash'] ) )
 							{ ?>
-								<img src="<?php echo site_url('uploads/blogs/images/' . $blog['id'] . '/' . $blog['image_hash'] ); ?>" alt="Blog" />
+								<img style="width: 66%; max-height: 400px;" src="<?php echo site_url('uploads/blogs/images/' . $blog['id'] . '/' . $blog['image_hash'] ); ?>" alt="Blog" />
 							<?php } else { ?>
 								<img src="<?php echo site_url('resources/frontend/img/default_blog.png'); ?>">
 							<?php } ?>
