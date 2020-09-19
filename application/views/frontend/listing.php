@@ -45,7 +45,7 @@
 									} ?></p>
 									<p class="date-com"><?php echo $blog['category']; ?></p>
 									<hr class="line"/>
-									<p><?php echo $blog['short_description']; ?></p>
+									<p class="short-description"><?php echo $blog['short_description']; ?></p>
 									<div class="view-more">
 										<a class="shop-btn" href="<?php echo site_url('blog/view/'.$blog['url']); ?>">Read More</a>
 									</div>
@@ -75,3 +75,21 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	$(document).ready(function() {
+		$('.blog-img').matchHeight({
+			byRow: true,
+			property: 'min-height',
+			target: null,
+			remove: false
+		});
+
+		$('.blog-text .short-description').matchHeight({
+			byRow: true,
+			property: 'min-height',
+			target: null,
+			remove: false
+		});
+	});
+</script>

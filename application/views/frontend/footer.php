@@ -48,5 +48,6 @@
 
 		<!-- main js -->
 		<?php echo Assets::js("frontend/js/main.js"); ?>
+		<?php echo Assets::js('frontend/js/jquery.matchHeight.js'); ?>
 	</body>
 </html>
