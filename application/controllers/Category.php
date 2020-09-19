@@ -86,7 +86,11 @@ class Category extends BaseController
 		{
 			$this->session->set_flashdata('error', lang('invalid_data'));
 		} else {
-			$result = $this->Category_model->add_category($_POST);
+			$data = array(
+				'name' 		=> $this->input->post('name'),
+				'added_on' 	=> date('Y-m-d G:i:s')
+			);
+			$result = $this->Category_model->add_category($data);
 			if ($result['rc'])
 				$this->session->set_flashdata('success', $result['msg']);
 			else

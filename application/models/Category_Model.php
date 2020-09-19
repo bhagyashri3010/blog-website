@@ -41,9 +41,9 @@ class Category_Model extends CI_Model
 		return $response;
 	}
 
-	function add_category($category_name)
+	function add_category($data)
 	{
-		$result = $this->db->insert('blog_categories',$category_name);
+		$result = $this->db->insert('blog_categories',$data);
 		if ($result) {
 			$response["rc"] = TRUE;
 			$response["msg"] = 'Category added successfully';
