@@ -1,0 +1,77 @@
+/* 
+    Document   : style.min
+    Created on : Feb 17, 2015, 7:01:08 PM
+    Author     : juhi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+.popup-modal,#brands-popup,#search-car-popup,#generate-proposal-popup,#publish-car-popup,alert_popup2.bMulti{background-color: #EBF1F7;border-radius:10px 10px 10px 10px;box-shadow: 0 0 7px 1px #999;color:#111;display:none;min-width:450px;}#popup .logo{color:#2b91af;font:bold 325% 'Petrona',sans}#popup,.bMulti{min-height:250px}#popup2 iframe{background:url('loader.gif') center center no-repeat;min-height:240px;min-width:450px}.loading{background:url('loader.gif') center center no-repeat}.bMulti p{font:500% 'Petrona',sans-serif;padding:45px 0 0;text-align:center}.bMulti a{left:175px;position:absolute;top:175px}.lt-ie9 .bModal{background-color:#000}.github{background:url('images/github.png') 0 0 no-repeat;height:149px;width:149px;opacity:.6;position:fixed;right:0;top:0;-webkit-transition-property:opacity;-moz-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:.35s;-moz-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;transition-timing-function:ease-out}.github:hover{opacity:1}
+
+#generate-proposal-popup,
+#search-car-popup,
+#publish-car-popup,
+.popup-modal
+{
+    width: 500px !important;
+}
+#generate-proposal-popup .content,
+#search-car-popup .content,
+#publish-car-popup .content,
+.popup-modal .content
+{
+   padding: 30px;
+   color:black;
+   font-family: monospace;
+}
+
+#generate-proposal-popup h3,
+#search-car-popup h3,
+#publish-car-popup h3,
+.popup-modal h3
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.popup-modal .popup-message
+{
+  padding-bottom:10px;
+  color:red;
+}
+.popup-modal #popup-message
+{
+  padding: 10px 10px 10px 0;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.button.b-close, .button.bClose {
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: none;
+  font: bold 131% sans-serif;
+  padding: 0 6px 2px;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+}
+.button {
+  background-color: #2b91af;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
