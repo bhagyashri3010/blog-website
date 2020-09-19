@@ -1880,7 +1880,7 @@ i.slick-arrow:hover {
 /* Shop page */
 .shop-menu {
     /*border-bottom: 1px solid #ddd;*/
-    border-top: 1px solid #ddd;
+    /*border-top: 1px solid #ddd;*/
     padding: 10px 0;
 }
 .shop-menu .tab-menu a {

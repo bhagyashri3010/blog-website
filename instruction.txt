@@ -1,0 +1,9 @@
+1. Admin URL
+http://myblog-website.com/login
+
+2. Admin credentials
+username : admin@myblog.com
+password : aaaaaa
+
+2. Frontend URL
+http://myblog-website.com/blog/frontend
